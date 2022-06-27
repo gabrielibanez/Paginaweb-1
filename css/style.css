@@ -1,20 +1,15 @@
-body{
-    background: rgb(124, 145, 122);
+*{
+    margin: 0px auto;
+    padding: 0px;
 }
 
-
-h5{
-    font-size: 45px;
-}
-
-p{
-    color: white;
-    background: rgba(106, 63, 150, 0.158);
-    text-align: center;
-}
-
-p:hover{
-    color: black;
-    font-size: 30px;
-    background: rgb(94, 32, 32);
+#content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 450px 1fr 200px;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "pie pie pie pie"
+    ;
 }
